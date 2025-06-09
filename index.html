@@ -1,218 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Nikhil Chanumolu | Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d0d0d;
-            color: #fff;
-            scroll-behavior: smooth;
-            line-height: 1.6;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #111;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #e63946;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            color: #e63946;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            padding: 12px 30px;
-            background-color: #e63946;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #d62839;
-            transform: scale(1.1);
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .card {
-            background-color: #1f1f1f;
-            padding: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 4px 20px rgba(230, 57, 70, 0.5);
-        }
-
-        footer {
-            background-color: #111;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: #e63946;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Nikhil Chanumolu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">Sai Nikhil Chanumolu</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">Sai Nikhil Chanumolu</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="home" class="hero">
-        <h1>Hi, I'm Sai Nikhil</h1>
-        <p>Aspiring Data Analyst | IT Support Specialist | Software Developer</p>
-        <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Connect with Me</button>
-    </section>
+  <section id="home" class="hero">
+    <h1>Hi, I'm Sai Nikhil</h1>
+    <p>Data Analyst | Web Developer | IT Support</p>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Connect with Me</button>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am currently pursuing my Master's in Computer Science at Florida Atlantic University. My passion lies in leveraging technology to solve real-world problems, with a focus on data analysis, IT support, and software development. I thrive in dynamic environments and am eager to contribute to impactful projects.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a Master's student in Computer Science at Florida Atlantic University with hands-on experience in data analysis, web development, and IT support. I enjoy building efficient, responsive applications and extracting actionable insights from data. I'm looking for full-time roles in tech where I can contribute and grow.</p>
+  </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="container">
-            <div class="card">Python - Proficient in data analysis, scripting, and automation.</div>
-            <div class="card">SQL - Skilled in querying, data manipulation, and database management.</div>
-            <div class="card">Java - Strong foundation in object-oriented programming and problem-solving.</div>
-            <div class="card">HTML, CSS, JavaScript - Frontend development with responsive design principles.</div>
-            <div class="card">Data Analysis - Experience with data visualization tools and statistical analysis.</div>
-            <div class="card">React.js - Developing dynamic user interfaces for modern web applications.</div>
-        </div>
-    </section>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="container">
+      <div class="card">Python, Java, SQL, HTML, CSS, JavaScript</div>
+      <div class="card">ReactJS, Firebase</div>
+      <div class="card">Pandas, NumPy, Matplotlib, Seaborn, Plotly</div>
+      <div class="card">MySQL, MongoDB</div>
+      <div class="card">Git, GitHub, Jupyter Notebook, VS Code</div>
+      <div class="card">Excel, Tableau, Power BI</div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="container">
-            <div class="card">
-                <h3>Students Live Behavior Monitoring</h3>
-                <p>Developed using YoloV3, OpenCV, and MediaPipe to analyze student behavior in real-time, enhancing online learning environments.</p>
-            </div>
-            <div class="card">
-                <h3>Handwritten Digit Recognition</h3>
-                <p>Implemented using Python and Scikit-learn, achieving high accuracy in recognizing handwritten digits through machine learning algorithms.</p>
-            </div>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="container">
+      <div class="card">
+        <h3>✅ Voice-Controlled To-Do List Web App</h3>
+        <p>Built a to-do list app using React and Web Speech API to allow voice-controlled task management. Used localStorage for persistence and designed it to be mobile responsive.</p>
+      </div>
+      <div class="card">
+        <h3>🛒 POS System for Mall Kiosk</h3>
+        <p>Created a custom POS system using React and Firebase for a small retail business. Included stock tracking, product search, and daily sales summaries.</p>
+      </div>
+      <div class="card">
+        <h3>🏏 Cricket Match Data Analysis</h3>
+        <p>Analyzed IPL data using Python and Pandas to find player and team performance trends. Visualized insights using Seaborn and Matplotlib.</p>
+      </div>
+      <div class="card">
+        <h3>🦠 COVID-19 Dashboard</h3>
+        <p>Developed an interactive dashboard with Plotly to visualize global COVID-19 statistics. Included filters by date and country.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="container">
-            <div class="card">
-                <h3>Web Developer Intern - Business Web Solutions</h3>
-                <p>Contributed to website redesigns, optimized performance, and improved user experience with modern web technologies.</p>
-            </div>
-            <div class="card">
-                <h3>Advanced Software Engineering Virtual Experience - Walmart USA</h3>
-                <p>Completed a virtual internship focusing on software engineering practices, project management, and agile methodologies.</p>
-            </div>
-        </div>
-    </section>
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="container">
+      <div class="card">
+        <h3>Web Developer Intern – Business Web Solutions</h3>
+        <p>Redesigned the company website, improving performance by 12%. Built SPAs using React, HTML/CSS, and Bootstrap. Contributed to client projects with responsive UI design.</p>
+      </div>
+      <div class="card">
+        <h3>Virtual Intern – Walmart Advanced Software Engineering</h3>
+        <p>Completed a virtual experience simulating software engineering challenges at Walmart. Practiced agile methods, code review, and technical documentation.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="container">
-            <div class="card">MS in Computer Science - Florida Atlantic University</div>
-            <div class="card">B.Tech in Information Technology - MLR Institute of Technology</div>
-        </div>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="container">
+      <div class="card">Florida Atlantic University – M.S. in Computer Science (2023 – 2025)</div>
+      <div class="card">MLR Institute of Technology – B.Tech in Information Technology (2018 – 2022)</div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required><br><br>
-            <input type="email" placeholder="Your Email" required><br><br>
-            <textarea placeholder="Your Message" required></textarea><br><br>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Your Message" required></textarea><br><br>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-        <p>Let's connect on social platforms:</p>
-        <a href="https://www.linkedin.com/in/niiiiiiikhil/">LinkedIn</a>
-        <a href="https://github.com/niiiiiiikhil">GitHub</a>
-        <a href="https://instagram.com/niiiiiiikhil">Instagram</a>
-    </footer>
+  <footer>
+    <p>Let's connect on social platforms:</p>
+    <a href="https://www.linkedin.com/in/niiiiiiikhil/">LinkedIn</a>
+    <a href="https://github.com/niiiiiiikhil">GitHub</a>
+    <a href="https://instagram.com/niiiiiiikhil">Instagram</a>
+  </footer>
 </body>
 </html>
-
-
-
